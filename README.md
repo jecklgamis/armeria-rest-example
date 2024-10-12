@@ -13,7 +13,7 @@ Docker: `docker run -p 8080:8080 -it jecklgamis/armeria-rest-example:main`
 
 ## Running
 
-Using executable jar
+Using executable jar:
 ```bash
 ./mvnw clean package
 java -jar target/armeria-rest-example.jar
@@ -21,6 +21,6 @@ java -jar target/armeria-rest-example.jar
 
 Using Docker:
 ```bash
-docker build -t armeria-rest-example:main
+docker build -t armeria-rest-example:main .
 docker run -it armeria-rest-example:main
 ```
