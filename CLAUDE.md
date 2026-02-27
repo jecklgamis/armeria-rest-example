@@ -11,6 +11,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 # Run all tests and verification (used in CI)
 ./mvnw verify
 
+# Run a single test class
+./mvnw test -pl . -Dtest=MyTestClass
+
 # Run locally
 java -jar target/armeria-rest-example.jar
 
@@ -22,7 +25,7 @@ make image       # just build Docker image
 
 ## Architecture
 
-This is a minimal REST API built with **Armeria** (async HTTP framework) on **Java 21**.
+This is a minimal REST API built with **Armeria** (async HTTP framework) on **Java 25**.
 
 **Single entry point:** `armeria.rest.example.App` — configures an Armeria `Server` with annotated REST services and starts it on port 8080. Services are defined as anonymous inner classes using Armeria's `@Get`/`@Produces` annotations.
 
