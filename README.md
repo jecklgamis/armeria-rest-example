@@ -9,7 +9,7 @@ Docker: `docker run -p 8080:8080 -it jecklgamis/armeria-rest-example:main`
 
 ## Requirements
 
-* Java 21, Docker
+* Java 25, Docker
 
 ## Running
 

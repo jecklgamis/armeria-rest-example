@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Build & Run Commands
 
 ```bash
-# Build executable uber-JAR (via Maven wrapper, requires Java 21)
+# Build executable uber-JAR (via Maven wrapper, requires Java 25)
 ./mvnw clean package
 
 # Run all tests and verification (used in CI)
@@ -31,6 +31,6 @@ This is a minimal REST API built with **Armeria** (async HTTP framework) on **Ja
 
 **Key dependencies:** Armeria for HTTP serving, GSON for JSON serialization, Logback for logging.
 
-**Deployment:** Dockerfile uses multi-stage build with Ubuntu 24.04 + OpenJDK 21 JRE, runs as non-root `app` user. Helm charts in `deployment/k8s/helm/` provide Kubernetes manifests (Deployment, Service, Ingress, HPA, RBAC).
+**Deployment:** Dockerfile uses Ubuntu 24.04 + OpenJDK 25 JRE, runs as non-root `app` user. Helm charts in `deployment/k8s/helm/` provide Kubernetes manifests (Deployment, Service, Ingress, HPA, RBAC).
 
 **CI:** GitHub Actions (`.github/workflows/build.yml`) runs `mvn verify` on push/PR to main, then builds and pushes Docker image on main branch merges.
