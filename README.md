@@ -1,6 +1,6 @@
 ## Armeria Rest Example
 
-[![Build](https://github.com/jecklgamis/armeria-rest-example/actions/workflows/build.yml/badge.svg)](https://github.com/jecklgamis/armeria-rest-example/actions/workflows/build.yml)
+[![Build](https://github.com/jecklgamis/armeria-rest-example/actions/workflows/build.yaml/badge.svg)](https://github.com/jecklgamis/armeria-rest-example/actions/workflows/build.yaml)
 
 This is an example Armeria REST app using Java.
 
