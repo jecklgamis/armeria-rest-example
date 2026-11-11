@@ -24,3 +24,13 @@ Using Docker:
 docker build -t armeria-rest-example:main .
 docker run -it armeria-rest-example:main
 ```
+
+## Load Testing
+
+Load tests use [resonate](https://github.com/jecklgamis/resonate). With the app running:
+
+```bash
+brew install jecklgamis/tap/resonate
+./run-perf-tests.sh
+```
+See [perf-tests](perf-tests) for the scenarios and details.
